@@ -1,10 +1,17 @@
 #ifndef MUSIK_H_INCLUDED
 #define MUSIK_H_INCLUDED
+#include <iostream>
+#include "Komposer.h"
 
 using namespace std;
 
-typedef string infotypeC;
+typedef struct Musik {
+    string ID;
+    string Judul;
+    int tahunRilis;
+}
 
+typedef string infotypeC;
 typedef struct elmChild *addressC;
 
 struct elmParent {
@@ -14,15 +21,15 @@ struct elmParent {
 };
 
 void createListChild(addressP p);
-addressC createElemenChild(infotypeC x);
-void insertFirstChild(addressP p, addressC c);
-void insertLastChild(addressP p, addressC c);
-void insertAfterChild(addressC prec, addressC c);
-void deleteFirstChild(addressP p, addressC &c);
-void deleteLastChild(addressP p, addressC c);
-void deleteAfterChild(addressC prec, addressC c);
-addressC findElemenChild(addressP p, infotypeC x);
-void viewChild(addressP p)
+addressC createElementChild(InfoChild X);
+void insertFirstChild(addressC &first, addressC C);
+void insertLastChild(addressC &first, addressC C);
+void insertAfterChild(addressC prec, addressC C);
+void deleteFirstChild(addressC &first, addressC &C);
+void deleteLastChild(addressC &first, addressC &C);
+void deleteAfterChild(addressC prec, addressC &C);
+addressC findElementChild(addressC first, string ID_Musik);
+void viewChild(addressC first);
 
 #endif // MUSIK_H_INCLUDED
 

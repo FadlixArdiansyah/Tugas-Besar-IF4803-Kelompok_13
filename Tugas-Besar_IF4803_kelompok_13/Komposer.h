@@ -1,15 +1,23 @@
 #ifndef KOMPOSER_H_INCLUDED
 #define KOMPOSER_H_INCLUDED
 #include <iostream>
+#include "Musik.h"
+
 using namespace std;
+
+typedef struct Komposer {
+    string ID;
+    string nama;
+}
 
 typedef string infotypeP;
 typedef struct elmParent *addressP;
+typedef struct elmChild *addressC;
 
 struct elmParent {
     infotypeP infoK;
     addressP next;
-    addressP nextChild;
+    addressP firstChild;
 };
 
 struct ListParent {
@@ -17,16 +25,18 @@ struct ListParent {
 };
 
 void createListParent(ListParent &L);
-addressP createElemenParent(infotypeP x);
-void insertFirstParent(ListParent &L, addressP p);
-void insertLastParent(ListParent &L, addressP p);
-void insertAfterParent(ListParent &L, addressP p, addressP prec);
-void deleteFirstParent(ListParent &L, addressP &p);
-void deleteLastParent(ListParent &L, addressP &p);
-void deleteAfterParent(ListParent &L, addressP &p, addressP prec);
-addressP findElemenParent(ListParent L, infotypeP x);
+addressP createElementParent(InfoParent X);
+void insertFirstParent(ListParent &L, addressP P);
+void insertLastParent(ListParent &L, addressP P);
+void insertAfterParent(ListParent &L, addressP prec, addressP P);
+void deleteFirstParent(ListParent &L, addressP &P);
+void deleteLastParent(ListParent &L, addressP &P);
+void deleteAfterParent(ListParent &L, addressP prec, addressP &P);
+addressP findElementParent(ListParent L, string ID_Komposer);
 void viewParent(ListParent L);
 
-
+void insertNewChildToParent(ListParent &L, string ID_Komposer, addressC C);
+void findMostProductiveParent(ListParent L);
+void searchMusicByYear(ListParent L, int TahunRilis);
 
 #endif // KOMPOSER_H_INCLUDED
