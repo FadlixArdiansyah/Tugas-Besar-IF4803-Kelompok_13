@@ -1,7 +1,6 @@
 #ifndef MUSIK_H_INCLUDED
 #define MUSIK_H_INCLUDED
 #include <iostream>
-#include "Komposer.h"
 
 using namespace std;
 
@@ -9,19 +8,19 @@ typedef struct Musik {
     string ID;
     string Judul;
     int tahunRilis;
-}
+};
 
-typedef string infotypeC;
+typedef Musik infotypeC;
 typedef struct elmChild *addressC;
 
-struct elmParent {
+struct elmChild {
     infotypeC info;
     addressC next;
     addressC prev;
 };
 
-void createListChild(addressP p);
-addressC createElementChild(InfoChild X);
+void createListChild(addressC first);
+addressC createElementChild(infotypeC X);
 void insertFirstChild(addressC &first, addressC C);
 void insertLastChild(addressC &first, addressC C);
 void insertAfterChild(addressC prec, addressC C);

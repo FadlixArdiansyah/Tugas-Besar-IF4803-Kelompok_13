@@ -4,7 +4,7 @@
 
 addressP createElementParent(infotypeP X){
     addressP p = new elmParent;
-    p->info = X;
+    p->infoK = X;
     p->next = nullptr;
     p->firstChild = nullptr;
     return p;
@@ -24,11 +24,11 @@ void insertLastParent(ListParent &L, addressP P){
 
 void deleteLastParent(ListParent &L, addressP &P){
     addressP q = L.first;
-    if (L.first =!ullptr){
+    if (L.first == nullptr){
         P = nullptr;
     } else if (q->next == nullptr){
         P = L.first;
-        L.first = nullptr
+        L.first = nullptr;
     } else {
         while (q->next->next != nullptr){
             q = q->next;
@@ -41,7 +41,7 @@ void deleteLastParent(ListParent &L, addressP &P){
 addressP findElementParent(ListParent L, string ID_Komposer){
     addressP p = L.first;
     while (p != nullptr){
-        if (p->info.ID == ID_Komposer){
+        if (p->infoK.ID == ID_Komposer){
             return p;
         }
         p = p->next;
@@ -49,13 +49,13 @@ addressP findElementParent(ListParent L, string ID_Komposer){
     return nullptr;
 }
 
-void insertNewChildToParent(ListParent &L, string ID_Komposer, addressC C){
-    addressP p = findElementParent(L, ID_Komposer);
+void insertNewChildToParent(ListParent &L, string ID, addressC C){
+    addressP p = findElementParent(L, ID);
     if (p != nullptr){
         insertLastChild(p->firstChild, C);
-        cout << "Musik: " << C->info.Judul << " Berhasil ditambah Ke komposer " << p->info.Nama << "'." << endl;
+        cout << "Musik: " << C->info.Judul << " Berhasil ditambah Ke komposer " << p->infoK.nama << "'." << endl;
     } else {
-        cout << "Komposer dengan ID " << ID_komposer << " Tidak ditemukan." << endl;
+        cout << "Komposer dengan ID " << ID << " Tidak ditemukan." << endl;
     }
 }
 
@@ -83,7 +83,7 @@ void findMostProductiveParent(ListParent L){
     }
     if (max_Count > 0){
         cout << "Komposer paling produktif: "<< productive << endl;
-        cout << "Jumlah Musik: " max_Count << endl;
+        cout << "Jumlah Musik: "<< max_Count << endl;
     } else {
         cout << "Komposer tidak memiliki musik." << endl;
     }
@@ -100,11 +100,11 @@ void searchMusicByYear(ListParent L, int TahunRilis){
         addressC c = p->firstChild;
         while (c != nullptr){
             if (c->info.tahunRilis == TahunRilis){
-                cout << "Judul: " << c->info.judul << ", Dibuat Oleh: " << p->infoK.nama << endl;
+                cout << "Judul: " << c->info.Judul << ", Dibuat Oleh: " << p->infoK.nama << endl;
                 found = true;
             }
-            c = c->next
+            c = c->next;
         }
-        p = p->next
+        p = p->next;
     }
 }

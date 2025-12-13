@@ -1,8 +1,8 @@
-#include "Musik"
+#include "Musik.h"
 #include <iostream>
 
-void createListChild(addressP p){
-    P =nullptr;
+void createListChild(addressC &first){
+    first = nullptr;
 }
 void insertFirstChild(addressC &first, addressC C){
   if (first == nullptr) {

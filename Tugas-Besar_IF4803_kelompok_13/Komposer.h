@@ -8,16 +8,16 @@ using namespace std;
 typedef struct Komposer {
     string ID;
     string nama;
-}
+};
 
-typedef string infotypeP;
+typedef struct Komposer infotypeP;
 typedef struct elmParent *addressP;
 typedef struct elmChild *addressC;
 
 struct elmParent {
     infotypeP infoK;
     addressP next;
-    addressP firstChild;
+    addressC firstChild;
 };
 
 struct ListParent {
@@ -25,7 +25,7 @@ struct ListParent {
 };
 
 void createListParent(ListParent &L);
-addressP createElementParent(InfoParent X);
+addressP createElementParent(infotypeP X);
 void insertFirstParent(ListParent &L, addressP P);
 void insertLastParent(ListParent &L, addressP P);
 void insertAfterParent(ListParent &L, addressP prec, addressP P);

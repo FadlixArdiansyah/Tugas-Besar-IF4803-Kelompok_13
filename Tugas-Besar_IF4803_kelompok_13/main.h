@@ -1,12 +1,13 @@
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
+#include "Komposer.h"
 
 using namespace std;
 
-void menuAdmin();
-void menuParent();
-void menuChild();
+void menuAdmin(ListParent &L);
+void menuParent(ListParent &L);
+void menuChild(ListParent &L);
 
-void menuUser();
+void menuUser(ListParent &L);
 
 #endif // MAIN_H_INCLUDED

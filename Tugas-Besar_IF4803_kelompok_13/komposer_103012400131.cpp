@@ -9,8 +9,8 @@ void createListParent(ListParent &L){
 }
 
 void insertFirstParent(ListParent &L, addressP P){
-   p-> next = L.first;
-    L.first = p;
+   P-> next = L.first;
+    L.first = P;
 }
 
 void insertAfterParent(ListParent &L, addressP prec, addressP P){
@@ -24,7 +24,7 @@ void deleteFirstParent(ListParent &L, addressP &P){
   if (L.first != nullptr){
         P = L.first;
         L.first = P->next;
-        p->next = nullptr;
+        P->next = nullptr;
     }
 }
 
@@ -45,4 +45,5 @@ void viewParent(ListParent L){
             cout << "ID: " << P->infoK.ID << " | Nama: " << P->infoK.nama << endl;
             P = P->next;
         }
+    }
 }

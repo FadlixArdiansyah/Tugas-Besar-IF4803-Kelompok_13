@@ -27,21 +27,21 @@ void deleteLastChild(addressC &first, addressC &C){
         cout << "Tidak ada child yang dapat di hapus" << endl;
     } else if (first->next == nullptr){
         C = first;
-        first = nullptr
+        first = nullptr;
     } else {
         C = first;
         while (C->next != nullptr){
             C = C->next;
         }
         C->prev->next = nullptr;
-        C->prev = nullptr
+        C->prev = nullptr;
     }
 }
 
 void deleteAfterChild(addressC prec, addressC &C){
     C = prec->next;
     prec->next = C->next;
-    C-next-prev = prec;
+    C->next->prev = prec;
     C->next = nullptr;
     C->next = nullptr;
 
