@@ -34,9 +34,9 @@ void deleteLastParent(ListParent &L, addressP &P);
 void deleteAfterParent(ListParent &L, addressP prec, addressP &P);
 addressP findElementParent(ListParent L, string ID_Komposer);
 void viewParent(ListParent L);
-
 void insertNewChildToParent(ListParent &L, string ID_Komposer, addressC C);
 void findMostProductiveParent(ListParent L);
 void searchMusicByYear(ListParent L, int TahunRilis);
+void findLeastProductiveParent(ListParent L);
 
 #endif // KOMPOSER_H_INCLUDED
