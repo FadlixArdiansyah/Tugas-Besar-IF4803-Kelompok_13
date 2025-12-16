@@ -59,11 +59,10 @@ void insertNewChildToParent(ListParent &L, string ID, addressC C){
     }
 }
 
-void findMostProductiveParent(ListParent L){
-     if (L.first == nullptr){
-        cout << "List Kosong " << endl;
+if (L.first == nullptr){
+        cout << "List Kosong." << endl;
+        return;
     }
-
     addressP p = L.first;
     int max_Count = -1;
     string productive = "";
@@ -77,10 +76,11 @@ void findMostProductiveParent(ListParent L){
         }
         if (Count > max_Count) {
             max_Count = Count;
-            C = C->next;
+            productive = p->infoK.nama;
         }
         p = p->next;
     }
+
     if (max_Count > 0){
         cout << "Komposer paling produktif: "<< productive << endl;
         cout << "Jumlah Musik: "<< max_Count << endl;
