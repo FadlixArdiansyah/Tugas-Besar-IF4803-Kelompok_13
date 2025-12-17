@@ -49,7 +49,7 @@ void deleteAfterChild(addressC prec, addressC &C){
 
 addressC findElementChild(addressC first, string ID_Musik){
     addressC c = first;
-    while (c = nullptr){
+    while (c != nullptr){
         if (c->info.ID == ID_Musik){
             return c;
         }

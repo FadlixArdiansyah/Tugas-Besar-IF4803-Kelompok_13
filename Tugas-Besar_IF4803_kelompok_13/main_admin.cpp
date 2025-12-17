@@ -44,7 +44,7 @@ void menuAdmin(ListParent &L){
                cin >> M.ID;
 
 
-               cout << "Judul Musik (1 Kata) : ";
+               cout << "Judul Musik : ";
                cin >> M.Judul;
 
                cout << "Tahun Rilis : ";
@@ -115,7 +115,7 @@ void menuParent(ListParent &L){
                cout << "ID Komposer : ";
                cin >> K.ID;
 
-               cout << "Nama Komposer (1 Kata Saja) : ";
+               cout << "Nama Komposer : ";
                cin >> K.nama;
 
                P = createElementParent(K);
@@ -281,7 +281,7 @@ void menuChild(ListParent &L){
                    C = findElementChild(P->firstChild, idMusik);
                    if (C != nullptr) {
                        cout << "\n--- MUSIK DITEMUKAN ---" << endl;
-                       cout << "Judul: " << C->info.Judul << ", Oleh: " << P->infoK.nama << endl;
+                       cout << "Judul: " << C->info.Judul << ", Dibuat Oleh: " << P->infoK.nama << endl;
                    } else {
                        cout << "Musik dengan ID " << idMusik << " tidak ditemukan pada Komposer ini." << endl;
                    }

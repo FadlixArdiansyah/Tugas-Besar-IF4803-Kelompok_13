@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1765536929 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\main_user.cpp
+1765898676 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\main_user.cpp
 	"main.h"
 	"Komposer.h"
 	<iostream>
@@ -7,14 +7,14 @@
 1765528905 c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\main.h
 	"Komposer.h"
 
-1765527163 c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\komposer.h
+1765897857 c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\komposer.h
 	<iostream>
 	"Musik.h"
 
 1765528017 c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\musik.h
 	<iostream>
 
-1765536887 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\main.cpp
+1765649433 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\main.cpp
 	<iostream>
 	"Komposer.h"
 	"Musik.h"
@@ -24,21 +24,21 @@
 	"Musik.h"
 	<iostream>
 
-1765525582 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\komposer_103012400131.cpp
+1765897857 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\komposer_103012400131.cpp
 	"Komposer.h"
 	"Musik.h"
 	<iostream>
 
-1765525698 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\musik_103012400158.cpp
+1765817353 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\musik_103012400158.cpp
 	"Musik.h"
 	<iostream>
 
-1765531584 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\komposer_103012400158.cpp
+1765817816 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\komposer_103012400158.cpp
 	"Komposer.h"
 	"Musik.h"
 	<iostream>
 
-1765536887 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\main_admin.cpp
+1765896823 source:c:\users\m.fadli ardiansyah\onedrive\documents\std\tugas-besar-if4803-kelompok_13\tugas-besar_if4803_kelompok_13\main_admin.cpp
 	"main.h"
 	"Komposer.h"
 	"Musik.h"
