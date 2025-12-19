@@ -32,6 +32,7 @@ void deleteFirstChild(addressC &first, addressC &C){
         first = first->next;
         C->next = nullptr;
     }
+
 }
 
 void viewChild(addressC first) {

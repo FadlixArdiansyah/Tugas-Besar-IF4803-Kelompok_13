@@ -152,6 +152,7 @@ void menuParent(ListParent &L){
                deleteFirstParent(L, P);
                if (P != nullptr) {
                    cout << "Komposer " << P->infoK.nama << " berhasil dihapus dari awal." << endl;
+
                } else {
                    cout << "List Komposer kosong." << endl;
                }

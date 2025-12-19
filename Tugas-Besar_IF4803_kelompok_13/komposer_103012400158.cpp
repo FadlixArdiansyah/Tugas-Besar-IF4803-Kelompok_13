@@ -105,8 +105,12 @@ void searchMusicByYear(ListParent L, int TahunRilis){
                 cout << "Judul: " << c->info.Judul << ", Dibuat Oleh: " << p->infoK.nama << endl;
                 found = true;
             }
+
             c = c->next;
         }
         p = p->next;
+    }
+    if (!found){
+        cout << "Musik Tidak Ditemukan" << endl;
     }
 }
